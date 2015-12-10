@@ -2,25 +2,25 @@
 
 #Intruduction
 
-CefGlue是建立在Cef项目之上的，
-Cef项目是C/C++的项目；
-CefGlue只不过是通过PInvoke来访问Cef项目生成的一些dll
-下面我们来看看Cef项目生成的一些dll和资源都是做什么用的
-打开这个目录\cef_binary_3.1453.1236_windows_xilium\Release
-libcef.dll-------------------------->Cef的核心类库
-icudt.dll-------------------------->支持unicode的类库
-ffmpegsumo.dll------------------>支持音频和视频的类库
-d3dcompiler_43.dll--------------->WinXP下支持3D的类库
-d3dcompiler_46.dll--------------->Win7和之后的Win支持3D的类库
-libEGL.dll------------------------->用于支持3D
-libGLESv2.dll--------------------->用于支持3D
+CefGlue是建立在Cef项目之上的，  
+Cef项目是C/C++的项目；   
+CefGlue只不过是通过PInvoke来访问Cef项目生成的一些dll   
+下面我们来看看Cef项目生成的一些dll和资源都是做什么用的   
+打开这个目录\cef_binary_3.1453.1236_windows_xilium\Release  
+libcef.dll-------------------------->Cef的核心类库   
+icudt.dll-------------------------->支持unicode的类库   
+ffmpegsumo.dll------------------>支持音频和视频的类库   
+d3dcompiler_43.dll--------------->WinXP下支持3D的类库  
+d3dcompiler_46.dll--------------->Win7和之后的Win支持3D的类库   
+libEGL.dll------------------------->用于支持3D  
+libGLESv2.dll--------------------->用于支持3D   
 
-打开目录：\cef_binary_3.1453.1236_windows_xilium\Resources
-locales--------------------------->此文件夹存放了各种国家的语言资源
-cef.pak-------------------------->为WebKit相关的资源（谷歌浏览器的核心是webkit）
-devtools_resources.pak--------->调试器的相关资源（我们做的项目是可以使用谷歌浏览器的调试器的）
+打开目录：\cef_binary_3.1453.1236_windows_xilium\Resources  
+locales--------------------------->此文件夹存放了各种国家的语言资源   
+cef.pak-------------------------->为WebKit相关的资源（谷歌浏览器的核心是webkit）  
+devtools_resources.pak--------->调试器的相关资源（我们做的项目是可以使用谷歌浏览器的调试器的）  
 
-##
+## 需要拷贝的文件
 在程序集中创建一个文件夹取名dll
 在程序集的属性里设置此程序集的预先生成事件的命令
 
